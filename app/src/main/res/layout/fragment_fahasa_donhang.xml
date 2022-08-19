@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.swiperefreshlayout.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/SwipeRefreshLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/mauXam"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="Danh sách đơn hàng chưa xử lý"
+                android:textColor="@color/black"
+                android:textSize="22sp" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp">
+
+            <TableLayout
+                android:id="@+id/tableLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ln1"
+                android:background="@color/white"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp">
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_weight="1"
+                        android:gravity="left"
+                        android:text="Số lượng đơn hàng"
+                        android:textColor="@color/mauXanhDollar" />
+
+                    <TextView
+                        android:id="@+id/txtTongSLDHCXL"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:text="30"
+                        android:textColor="@color/mauXanhDollar" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_weight="1"
+                        android:gravity="left"
+                        android:text="Tổng giá trị"
+                        android:textColor="@color/mauXanhDollar" />
+
+                    <TextView
+                        android:id="@+id/txtTongGiaTri"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:text="125,000 đ"
+                        android:textColor="@color/mauXanhDollar" />
+                </TableRow>
+            </TableLayout>
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/lvDHChXL"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"></ListView>
+
+    </LinearLayout>
+</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>

@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mauXam"
+    tools:context="admin1.ufm.quanlybanhangfahasa.Activity_Fahasa.Activity_ThongKeBanHang">
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:layout_margin="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageButton
+            android:src="@drawable/back"
+            android:backgroundTint="@color/mauXam"
+            android:id="@+id/imgBtnBack"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/lbChuDe"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Thống kê bán hàng"
+            android:textColor="@color/black"
+            android:textSize="24sp"/>
+        <ImageButton
+            android:visibility="invisible"
+            android:src="@drawable/add"
+            android:backgroundTint="@color/mauXam"
+            android:id="@+id/imgBtnThem"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"/>
+    </RelativeLayout>
+    <com.github.mikephil.charting.charts.PieChart
+        android:visibility="gone"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/white"
+        android:id="@+id/bieuDoTron"
+        android:layout_width="300dp"
+        android:layout_height="300dp"/>
+    <com.github.mikephil.charting.charts.BarChart
+        android:visibility="gone"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/white"
+        android:id="@+id/bieuDoCot"
+        android:layout_width="380dp"
+        android:layout_height="380dp"/>
+    <Spinner
+        android:id="@+id/spFilter"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:gravity="center"
+        android:background="@color/mauVangChuDao"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"/>
+    <TableLayout
+        android:background="@color/white"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TableRow>
+            <TextView
+                android:layout_height="match_parent"
+                android:text="Ngày hiện tại: "
+                android:textColor="@color/mauDo2" />
+            <TextView
+                android:textColor="@color/mauDo2"
+                android:id="@+id/lbNgayHienTai"
+                android:layout_marginLeft="16dp"
+                android:text="15/12/2021"/>
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:layout_height="match_parent"
+                android:text="Tổng số lượng đơn hàng: "
+                android:textColor="@color/black" />
+            <TextView
+                android:id="@+id/lbTongSLDH"
+                android:layout_marginLeft="16dp"
+                android:text="50"/>
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:layout_height="match_parent"
+                android:text="Đơn hàng xử lý thành công: "
+                android:textColor="@color/black" />
+            <TextView
+                android:id="@+id/lbSLDHXL"
+                android:layout_marginLeft="16dp"
+                android:text="28"/>
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:layout_height="match_parent"
+                android:text="Tổng giá trị: "
+                android:textColor="@color/black" />
+            <TextView
+                android:id="@+id/lbTongTien"
+                android:layout_marginLeft="16dp"
+                android:text="2,000,000 đ"/>
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:layout_height="match_parent"
+                android:text="Doanh số bán hàng trong ngày: "
+                android:textColor="@color/black" />
+            <TextView
+                android:id="@+id/lbDoanhSoNgay"
+                android:layout_marginLeft="16dp"
+                android:text="0 đ"/>
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:layout_height="match_parent"
+                android:text="Doanh số bán hàng trong tháng: "
+                android:textColor="@color/black" />
+            <TextView
+                android:id="@+id/lbDoanhSoThang"
+                android:layout_marginLeft="16dp"
+                android:text="0 đ"/>
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:layout_height="match_parent"
+                android:text="Doanh số bán hàng trong năm: "
+                android:textColor="@color/black" />
+            <TextView
+                android:id="@+id/lbDoanhSoNam"
+                android:layout_marginLeft="16dp"
+                android:text="0 đ"/>
+        </TableRow>
+
+    </TableLayout>
+
+</LinearLayout>

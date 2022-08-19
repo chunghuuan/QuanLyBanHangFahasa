@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mauXam"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/imgBtnBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:backgroundTint="@color/mauXam"
+            android:src="@drawable/back"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Thông tin khách hàng"
+            android:textColor="@color/black"
+            android:textSize="22sp" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/lvKhachHang"
+        android:layout_width="match_parent"
+        android:layout_height="210dp"
+        android:background="@color/white"></ListView>
+    <TextView
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Thông tin khách hàng"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.7"
+            android:gravity="center"
+            android:text="Tên khách hàng:"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/txtTenKH"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.3"
+            android:hint="Nhập ở đây" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.7"
+            android:gravity="center"
+            android:text="Ngày sinh:"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/txtNgaySinh"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.3"
+            android:hint="Nhập ở đây" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.7"
+            android:gravity="center"
+            android:text="Quê quán:"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+        <EditText
+            android:id="@+id/txtQueQuan"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.3"
+            android:hint="Nhập ở đây" />
+    </LinearLayout>
+    <LinearLayout
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:weightSum="4"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+        <Button
+            android:id="@+id/btnXoaKH"
+            android:textColor="@color/black"
+            android:backgroundTint="@color/mauVangChuDao"
+            android:text="Xóa"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"/>
+        <Button
+            android:id="@+id/btnSuaKH"
+            android:textColor="@color/black"
+            android:backgroundTint="@color/mauVangChuDao"
+            android:layout_marginLeft="8dp"
+            android:text="Sửa"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"/>
+        <Button
+            android:id="@+id/btnThemVoucher"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/mauDo2"
+            android:layout_marginLeft="8dp"
+            android:text="Thêm Voucher"
+            android:layout_weight="2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+    <TextView
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Thống kê bán hàng"/>
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp">
+
+        <TableRow>
+
+            <TextView
+                android:layout_height="match_parent"
+                android:text="Đơn hàng chưa xử lý: "
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/lbDHChXL"
+                android:layout_marginLeft="16dp"
+                android:text="0" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:text="Đơn hàng đã xử lý:"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/lbDHXL"
+                android:layout_marginLeft="16dp"
+                android:text="0" />
+        </TableRow>
+
+
+    </TableLayout>
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp">
+        <TableRow>
+
+            <TextView
+                android:text="Tổng giá trị tất cả đơn hàng đã xử lý:"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/lbTongGT"
+                android:layout_marginLeft="16dp"
+                android:text="0 đ" />
+        </TableRow>
+    </TableLayout>
+    <Button
+        android:layout_margin="8dp"
+        android:id="@+id/btnXemLVDHKH"
+        android:backgroundTint="@color/mauDo2"
+        android:textSize="16sp"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:text="Click vào đây để xem tất cả đơn hàng của khách hàng"/>
+</LinearLayout>

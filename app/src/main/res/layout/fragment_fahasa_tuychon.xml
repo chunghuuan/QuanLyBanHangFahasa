@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/mauXam"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:layout_height="match_parent">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Xin Chào"
+        android:textColor="@color/mauDo2"
+        android:textSize="32sp"/>
+    <TextView
+        android:id="@+id/lbTenTK"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:textSize="16sp"
+        android:textColor="@color/mauDo2"
+        android:text="Tên của bạn"/>
+    <LinearLayout
+        android:layout_marginTop="16dp"
+        android:background="@color/mauVangChuDao"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:orientation="vertical">
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:id="@+id/btnThongTinCaNhan"
+            android:backgroundTint="@color/mauVangChuDao"
+            android:drawableTint="@color/mauDo2"
+            android:textColor="@color/mauDo2"
+            android:gravity="center_vertical"
+            android:layout_weight="1"
+            android:textSize="16sp"
+            android:paddingLeft="4dp"
+            android:drawablePadding="8dp"
+            android:drawableLeft="@drawable/theodoi"
+            android:text="Thông tin cá nhân"/>
+        <Button
+            android:id="@+id/btnVeChungToi"
+            android:backgroundTint="@color/mauVangChuDao"
+            android:drawableTint="@color/mauDo2"
+            android:textColor="@color/mauDo2"
+            android:paddingLeft="4dp"
+            android:textSize="16sp"
+            android:drawablePadding="8dp"
+            android:drawableLeft="@drawable/facebook"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="Về chúng tôi"/>
+
+        <Button
+            android:id="@+id/btnGopY"
+            android:backgroundTint="@color/mauVangChuDao"
+            android:drawableTint="@color/mauDo2"
+            android:textColor="@color/mauDo2"
+            android:paddingLeft="4dp"
+            android:textSize="16sp"
+            android:drawablePadding="8dp"
+            android:drawableLeft="@drawable/feedback"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="Góp ý ứng dụng"/>
+        <Button
+            android:id="@+id/btnChiaSe"
+            android:backgroundTint="@color/mauVangChuDao"
+            android:drawableTint="@color/mauDo2"
+            android:textColor="@color/mauDo2"
+            android:paddingLeft="4dp"
+            android:textSize="16sp"
+            android:drawablePadding="8dp"
+            android:drawableLeft="@drawable/chiase"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="Chia sẻ"/>
+    </LinearLayout>
+    <Button
+        android:id="@+id/btnDangXuat"
+        android:layout_marginTop="24dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/mauXanhNuoc"
+        android:text="Đăng xuất"/>
+
+</LinearLayout>

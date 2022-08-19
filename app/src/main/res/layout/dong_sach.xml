@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <TextView
+        android:background="@color/mauVangChuDao"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="16dp"
+        android:textColor="@color/black"
+        android:text="Sách văn học"
+        android:id="@+id/txt_TheLoai"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/img_URLHinhAnh"
+            android:layout_marginLeft="16dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"/>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="250dp"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/txt_TenSach"
+                android:paddingLeft="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                android:text="Tên sách" />
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp">
+                <TextView
+                    android:id="@+id/txt_NamXB"
+                    android:text="Namxb"
+                    android:textColor="@color/black"
+                    android:paddingLeft="16dp"
+                    android:layout_weight="0.5"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"/>
+                <TextView
+                    android:id="@+id/txt_GiaBanGoc"
+                    android:textColor="@color/black"
+                    android:paddingLeft="16dp"
+                    android:text="Giá bán gốc"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+
+            android:id="@+id/txt_SLTon"
+            android:paddingRight="16dp"
+            android:gravity="center|right"
+            android:textColor="@color/black"
+            android:layout_weight="3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="Số lượng tồn"/>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"/>
+</LinearLayout>

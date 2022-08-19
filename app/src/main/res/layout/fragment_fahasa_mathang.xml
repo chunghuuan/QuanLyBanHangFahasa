@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:backgroundTint="@color/mauXam"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingLeft="16dp"
+            android:text="Giỏ hàng"
+            android:textColor="@color/mauDo2"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginBottom="8dp">
+
+            <TableLayout
+                android:id="@+id/tableLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ln1"
+                android:background="@color/white"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp">
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_weight="1"
+                        android:gravity="left"
+                        android:text="Số sách đã chọn"
+                        android:textColor="@color/mauXanhDollar" />
+
+                    <TextView
+                        android:id="@+id/txtTongSLDHCXL"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:text="0"
+                        android:textColor="@color/mauXanhDollar" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_weight="1"
+                        android:gravity="left"
+                        android:text="Số lượng mua"
+                        android:textColor="@color/mauXanhDollar" />
+
+                    <TextView
+                        android:id="@+id/txtSLMua"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:text="0"
+                        android:textColor="@color/mauXanhDollar" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_weight="1"
+                        android:gravity="left"
+                        android:text="Tổng giá trị"
+                        android:textColor="@color/mauXanhDollar" />
+
+                    <TextView
+                        android:id="@+id/txtTongGiaTri"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:text="0 đ"
+                        android:textColor="@color/mauXanhDollar" />
+                </TableRow>
+            </TableLayout>
+        </LinearLayout>
+        <Button
+            android:id="@+id/btnXemGioHang"
+            android:backgroundTint="@color/mauDo2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Xem giỏ hàng"/>
+
+        <SearchView
+            android:id="@+id/fhsSearchView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="8dp"
+            android:background="@color/white"
+            android:iconifiedByDefault="false"
+            android:queryHint="Nhập ở đây !" />
+
+        <Spinner
+            android:id="@+id/spSach"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="@color/mauDo2"
+            android:gravity="center|center_horizontal" />
+
+        <ListView
+            android:id="@+id/lvSach"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <Spinner
+        android:gravity="left"
+        android:id="@+id/spVoucher"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"/>
+    <LinearLayout
+        android:weightSum="2"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+        <TextView
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:layout_weight="1.5"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="Tỷ lệ giảm:"/>
+        <TextView
+            android:id="@+id/lbTyLeGiam"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:gravity="left"
+            android:layout_weight="1.5"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="20%"/>
+    </LinearLayout>
+    <LinearLayout
+        android:weightSum="3"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/txtSoLuong"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="1"/>
+        <ImageButton
+            android:id="@+id/btnTang"
+            android:textSize="24sp"
+            android:textColor="@color/black"
+            android:backgroundTint="@color/mauVangChuDao"
+            android:layout_marginLeft="8dp"
+            android:layout_weight="1.3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/plus1"/>
+        <ImageButton
+            android:id="@+id/btnGiam"
+            android:textSize="24sp"
+            android:textColor="@color/black"
+            android:backgroundTint="@color/mauVangChuDao"
+            android:layout_marginLeft="8dp"
+            android:layout_weight="1.3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/minus1"/>
+    </LinearLayout>
+
+
+
+</LinearLayout>

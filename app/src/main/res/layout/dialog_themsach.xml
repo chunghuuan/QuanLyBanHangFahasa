@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:orientation="vertical">
+
+    <EditText
+        android:textSize="22sp"
+        android:hint="Tên sách"
+        android:id="@+id/txtTenSach"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:textSize="14sp"
+        android:hint="Đường dẫn URL hình ảnh"
+        android:id="@+id/txtURLHinhAnh"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:textSize="14sp"
+        android:hint="Năm xuất bản"
+        android:id="@+id/txtNamXB"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:inputType="number"
+        android:textSize="14sp"
+        android:hint="Gía bán gốc"
+        android:id="@+id/txtGiaBanGoc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:inputType="number"
+        android:textSize="14sp"
+        android:hint="Số lượng tồn"
+        android:id="@+id/txtSLTon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        android:orientation="horizontal">
+        <TextView
+            android:gravity="center|left"
+            android:text="Tên thể loại:"
+            android:layout_weight="0.5"
+            android:layout_width="0dp"
+            android:layout_height="25dp"/>
+        <Spinner
+            android:id="@+id/spTheLoai"
+            android:gravity="center|center_horizontal"
+            android:layout_weight="1.5"
+            android:layout_width="0dp"
+            android:layout_height="25dp"/>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"/>
+    <LinearLayout
+        android:layout_marginTop="6dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        android:orientation="horizontal">
+        <TextView
+            android:gravity="center|left"
+            android:text="Nhà xuất bản:"
+            android:layout_weight="0.5"
+            android:layout_width="0dp"
+            android:layout_height="25dp"/>
+        <Spinner
+
+            android:id="@+id/spNXB"
+            android:gravity="center|center_horizontal"
+            android:layout_weight="1.5"
+            android:layout_width="0dp"
+            android:layout_height="25dp"/>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"/>
+    <LinearLayout
+        android:layout_marginTop="6dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        android:orientation="horizontal">
+        <TextView
+            android:gravity="center|left"
+            android:text="Tác giả:"
+            android:layout_weight="0.5"
+            android:layout_width="0dp"
+            android:layout_height="25dp"/>
+        <Spinner
+
+            android:id="@+id/spTacGia"
+            android:gravity="center|center_horizontal"
+            android:layout_weight="1.5"
+            android:layout_width="0dp"
+            android:layout_height="25dp"/>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"/>
+    <LinearLayout
+        android:layout_marginTop="6dp"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:weightSum="2"
+        android:orientation="horizontal">
+        <TextView
+            android:gravity="top|left"
+            android:text="Danh mục khuyến mãi:"
+            android:layout_weight="0.5"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"/>
+        <Spinner
+            android:id="@+id/spCTKM"
+            android:gravity="center|center_horizontal"
+            android:layout_weight="1.5"
+            android:layout_width="0dp"
+            android:layout_height="32dp"/>
+    </LinearLayout>
+    <View
+        android:layout_marginTop="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"/>
+    <EditText
+        android:gravity="left"
+        android:hint="Nội dung ..."
+        android:id="@+id/txtNoiDungSach"
+        android:layout_width="match_parent"
+        android:layout_height="150dp" />
+
+</LinearLayout>

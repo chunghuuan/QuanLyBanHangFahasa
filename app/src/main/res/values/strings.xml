@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">QuanLyBanHang</string>
+    <string name="nav_LichSu">Lịch sử</string>
+    <string name="nav_BaoCao">Tùy chọn</string>
+    <string name="nav_Them">Thêm</string>
+
+    <string name="nav_fahasa_capnhat">Cập nhật</string>
+    <string name="nav_fahasa_donhang">Đơn hàng</string>
+    <string name="nav_fahasa_tuychon">Tùy chọn</string>
+    <string name="nav_fahasa_canhan"> Cá nhân</string>
+    <string name="nav_fahasa_mathang"> Mặt hàng</string>
+
+</resources>

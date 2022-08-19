@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:background="@color/mauXam">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cập nhật dữ liệu"
+        android:gravity="center"
+        android:textSize="32sp"
+        android:textColor="@color/mauDo2"
+        />
+    <LinearLayout
+        android:layout_marginTop="16dp"
+        android:background="@color/mauVangChuDao"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:id="@+id/btnDHDaXuLy"
+            android:backgroundTint="@color/mauVangChuDao"
+            android:drawableTint="@color/mauDo2"
+            android:textColor="@color/mauDo2"
+            android:gravity="center_vertical"
+            android:layout_weight="1"
+            android:textSize="16sp"
+            android:paddingLeft="4dp"
+            android:drawablePadding="8dp"
+            android:drawableLeft="@drawable/theodoi"
+            android:text="Dữ liệu đơn hàng đã xử lý"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:id="@+id/btnTXSSach"
+            android:backgroundTint="@color/mauVangChuDao"
+            android:drawableTint="@color/mauDo2"
+            android:textColor="@color/mauDo2"
+            android:gravity="center_vertical"
+            android:layout_weight="1"
+            android:textSize="16sp"
+            android:paddingLeft="4dp"
+            android:drawablePadding="8dp"
+            android:drawableLeft="@drawable/xemthuchi"
+            android:text="quản lý sách"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:id="@+id/btnTXSVoucher"
+            android:backgroundTint="@color/mauVangChuDao"
+            android:drawableTint="@color/mauDo2"
+            android:textColor="@color/mauDo2"
+            android:gravity="center_vertical"
+            android:layout_weight="1"
+            android:textSize="16sp"
+            android:paddingLeft="4dp"
+            android:drawablePadding="8dp"
+            android:drawableLeft="@drawable/xemthuchi"
+            android:text="quản lý Voucher"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:id="@+id/btnTXSKhachHang"
+            android:backgroundTint="@color/mauVangChuDao"
+            android:drawableTint="@color/mauDo2"
+            android:textColor="@color/mauDo2"
+            android:gravity="center_vertical"
+            android:layout_weight="1"
+            android:textSize="16sp"
+            android:paddingLeft="4dp"
+            android:drawablePadding="8dp"
+            android:drawableLeft="@drawable/xemthuchi"
+            android:text="quản lý khách hàng"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:id="@+id/btnTaoBaoCao"
+            android:backgroundTint="@color/mauVangChuDao"
+            android:drawableTint="@color/mauDo2"
+            android:textColor="@color/mauDo2"
+            android:gravity="center_vertical"
+            android:layout_weight="1"
+            android:textSize="16sp"
+            android:paddingLeft="4dp"
+            android:drawablePadding="8dp"
+            android:drawableLeft="@drawable/add"
+            android:text="Tạo báo cáo đơn hàng"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:id="@+id/btnThongKe"
+            android:backgroundTint="@color/mauVangChuDao"
+            android:drawableTint="@color/mauDo2"
+            android:textColor="@color/mauDo2"
+            android:gravity="center_vertical"
+            android:layout_weight="1"
+            android:textSize="16sp"
+            android:paddingLeft="4dp"
+            android:drawablePadding="8dp"
+            android:drawableLeft="@drawable/thongke"
+            android:text="Thống kê tình hình bán hàng"/>
+    </LinearLayout>
+
+</LinearLayout>

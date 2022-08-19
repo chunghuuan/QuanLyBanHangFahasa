@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/lb_maDH"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Đơn hàng : 1"
+                android:gravity="center"
+                android:textColor="@color/mauDo2"
+                android:textSize="18sp"/>
+            <RelativeLayout
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/lbKH"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tên khách hàng:"
+                    android:textColor="@color/black" />
+                <TextView
+                    android:layout_marginLeft="8dp"
+                    android:id="@+id/lb_TenKH"
+                    android:layout_toRightOf="@+id/lbKH"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Phạm Lang Vy"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:textColor="@color/black"
+                    android:id="@+id/lbNgayLap"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ngày lập"/>
+                <TextView
+                    android:layout_marginLeft="8dp"
+                    android:id="@+id/lb_NgayLap"
+                    android:layout_toRightOf="@+id/lbNgayLap"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="30/11/2021"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:textColor="@color/black"
+                    android:id="@+id/lbHTTT"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Hình thức thanh toán"/>
+                <TextView
+                    android:layout_marginLeft="8dp"
+                    android:id="@+id/lb_HTTT"
+                    android:layout_toRightOf="@+id/lbHTTT"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Thanh toán khi nhận hàng"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:textColor="@color/black"
+                    android:id="@+id/textview2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Mã Voucher: "/>
+                <TextView
+                    android:layout_marginLeft="8dp"
+                    android:id="@+id/lb_MaVoucher"
+                    android:layout_toRightOf="@+id/textview2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="BANMOI2021"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toStartOf="@+id/lb_TyLeGiam"
+                    android:text="Tỷ lệ giảm:"
+                    android:textColor="@color/black" />
+                <TextView
+                    android:layout_marginLeft="8dp"
+                    android:layout_alignParentRight="true"
+                    android:id="@+id/lb_TyLeGiam"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="20.000d" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:textColor="@color/black"
+                    android:id="@+id/lbTongTien"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tổng tiền"/>
+                <TextView
+                    android:textColor="@color/mauXanhDollar"
+                    android:layout_marginLeft="8dp"
+                    android:id="@+id/lb_TongTien"
+                    android:layout_toRightOf="@+id/lbTongTien"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="x.000.000 đ"/>
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:textColor="@color/black"
+                    android:id="@+id/lbTinhTrang"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tình trạng"/>
+                <TextView
+                    android:layout_marginLeft="8dp"
+                    android:id="@+id/lb_TinhTrang"
+                    android:layout_toRightOf="@+id/lbTinhTrang"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Chưa xử lý"/>
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"/>
+</LinearLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/nav_fahasa_mathang"
+        android:title="@string/nav_fahasa_mathang"
+        android:icon="@drawable/sanpham"/>
+
+    <item android:id="@+id/nav_fahasa_giohang"
+        android:title="@string/nav_fahasa_canhan"
+        android:icon="@drawable/user"/>
+
+    <item android:id="@+id/nav_fahasa_tuychon"
+        android:title="@string/nav_fahasa_tuychon"
+        android:icon="@drawable/bosung"/>
+
+
+</menu>

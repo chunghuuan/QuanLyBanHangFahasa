@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:orientation="vertical">
+
+    <EditText
+        android:textSize="24sp"
+        android:hint="Tên nhân viên"
+        android:id="@+id/txtTenNV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:inputType="number"
+        android:textSize="14sp"
+        android:hint="Số điện thoại"
+        android:id="@+id/txtSDTNV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:textSize="14sp"
+        android:hint="Email"
+        android:id="@+id/txtEmailNV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:inputType="textPassword"
+        android:textSize="14sp"
+        android:hint="Mật khẩu"
+        android:id="@+id/txtMatKhauNV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        android:orientation="horizontal">
+        <TextView
+            android:gravity="center|left"
+            android:text="Giới tính:"
+            android:layout_weight="0.5"
+            android:layout_width="0dp"
+            android:layout_height="25dp"/>
+        <Spinner
+            android:id="@+id/spGioiTinh"
+            android:gravity="center|center_horizontal"
+            android:layout_weight="1.5"
+            android:layout_width="0dp"
+            android:layout_height="25dp"/>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"/>
+    <EditText
+        android:inputType="number"
+        android:textSize="14sp"
+        android:hint="Năm sinh"
+        android:id="@+id/txtNamSinh"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        android:orientation="horizontal">
+        <TextView
+            android:gravity="center|left"
+            android:text="Quê quán:"
+            android:layout_weight="0.5"
+            android:layout_width="0dp"
+            android:layout_height="25dp"/>
+        <Spinner
+            android:id="@+id/spQueQuan"
+            android:gravity="center|center_horizontal"
+            android:layout_weight="1.5"
+            android:layout_width="0dp"
+            android:layout_height="25dp"/>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:orientation="horizontal">
+        <TextView
+            android:gravity="center|left"
+            android:text="Ngày vào làm:"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"/>
+        <EditText
+            android:layout_weight="1"
+            android:enabled="false"
+            android:textSize="14sp"
+            android:hint="Ngày vào làm"
+            android:id="@+id/txtNgayVaoLam"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>

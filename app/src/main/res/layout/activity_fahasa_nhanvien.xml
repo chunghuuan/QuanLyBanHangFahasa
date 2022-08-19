@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mauXam"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/imgBtnBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:backgroundTint="@color/mauXam"
+            android:src="@drawable/back"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Thông tin nhân viên"
+            android:textColor="@color/black"
+            android:textSize="22sp" />
+        <ImageButton
+            android:id="@+id/ImgBtnThemNV"
+            android:backgroundTint="@color/mauXam"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/add"/>
+    </RelativeLayout>
+
+    <TableLayout
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginBottom="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="35dp">
+        <TableRow>
+            <TextView
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:text="Phân loại:"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"/>
+            <Spinner
+                android:id="@+id/spTinhTrang"
+                android:layout_width="220dp"
+                android:layout_height="35dp"/>
+        </TableRow>
+
+    </TableLayout>
+
+
+    <ListView
+        android:id="@+id/lvNhanVien"
+        android:layout_width="match_parent"
+        android:layout_height="210dp"
+        android:background="@color/white"></ListView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Thông tin nhân viên" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.7"
+            android:gravity="center"
+            android:text="Tên nhân viên:"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/txtTenNV"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.3"
+            android:hint="Nhập ở đây" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.7"
+            android:gravity="center"
+            android:text="Năm sinh:"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/txtNamSinh"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.3"
+            android:hint="Nhập ở đây" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.7"
+            android:gravity="center"
+            android:text="Quê quán:"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/txtQueQuan"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.3"
+            android:hint="Nhập ở đây" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.7"
+            android:gravity="center"
+            android:text="Ngày vào làm:"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/txtNgayVaoLam"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.3"
+            android:hint="Nhập ở đây" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ln1"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:weightSum="4">
+
+        <Button
+            android:id="@+id/btnSuaNV"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="8dp"
+            android:layout_weight="2"
+            android:backgroundTint="@color/mauVangChuDao"
+            android:text="Sửa thông tin"
+            android:textColor="@color/black" />
+
+        <Button
+            android:id="@+id/btnNghiViecNV"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="45dp"
+            android:layout_weight="2"
+            android:backgroundTint="@color/mauDo2"
+            android:text="cho nghỉ việc"
+            android:textColor="@color/white" />
+        <Button
+            android:layout_gravity="center"
+            android:visibility="gone"
+            android:id="@+id/btnQuayLaiNV"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:backgroundTint="@color/mauXanhDollar"
+            android:text="quay lại làm"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ln2"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:text="Thống kê bán hàng" />
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp">
+
+            <TableRow>
+
+                <TextView
+                    android:layout_height="match_parent"
+                    android:text="Số lượng đơn hàng đã xử lý: "
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/lbDHDaXL"
+                    android:layout_marginLeft="16dp"
+                    android:text="0" />
+            </TableRow>
+        </TableLayout>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp">
+
+            <TableRow>
+
+                <TextView
+                    android:text="Tổng giá trị tất cả đơn hàng đã xử lý:"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/lbTongGT"
+                    android:layout_marginLeft="16dp"
+                    android:text="0 đ" />
+            </TableRow>
+        </TableLayout>
+    </LinearLayout>
+
+</LinearLayout>

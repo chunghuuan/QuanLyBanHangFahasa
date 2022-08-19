@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Nhân viên thực hiện"/>
+        <TextView
+            android:id="@+id/lbNVPhuTrach"
+            android:textColor="@color/mauXanhDollar"
+            android:gravity="right"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Chung Hữu An"/>
+    </LinearLayout>
+
+    <EditText
+        android:textSize="14sp"
+        android:hint="Ngày xử lý"
+        android:id="@+id/txtNgayXL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:textSize="14sp"
+        android:hint="Phí giao hàng"
+        android:id="@+id/txtPhiGiao"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <View
+        android:layout_marginTop="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"/>
+    <EditText
+        android:gravity="left"
+        android:hint="Nội dung ..."
+        android:id="@+id/txtNoiDung"
+        android:layout_width="match_parent"
+        android:layout_height="150dp" />
+
+
+</LinearLayout>

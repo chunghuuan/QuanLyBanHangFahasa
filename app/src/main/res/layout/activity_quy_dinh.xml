@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="admin1.ufm.quanlybanhangfahasa.Activity_Fahasa.Activity_QuyDinh"
+    android:orientation="vertical"
+    android:background="@color/mauXam"
+    android:padding="16dp">
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageButton
+            android:src="@drawable/back"
+            android:backgroundTint="@color/mauXam"
+            android:id="@+id/imgBtnBack"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Qui định và hình thức thanh toán"
+            android:textColor="@color/black"
+            android:textSize="18sp"/>
+    </RelativeLayout>
+    <TextView
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@color/mauDo2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Các bước mua hàng:"/>
+    <TextView
+        android:textColor="@color/black"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Bước 1: Khách hàng đặt hàng, cung cấp thông tin đầy đủ, xác thực (thông qua ứng dụng, SMS, Email..)"/>
+    <TextView
+        android:textColor="@color/black"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Bước 2: Fahasa xác thực đơn hàng"/>
+    <TextView
+        android:textColor="@color/black"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Bước 3: Nhân viên xác nhận thông tin khách hàng (điện thoại, tin nhắn, mail..);"/>
+    <TextView
+        android:textColor="@color/black"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Bước 4: Nhân viên chuyển hàng."/>
+    <TextView
+        android:textColor="@color/black"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Bước 5: Khách hàng nhận hàng và thanh toán (trong trường hợp thanh toán sau)"/>
+    <TextView
+        android:textColor="@color/black"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Bước 6: Fahasa luôn chờ những phản hồi của khách hàng (nếu có) sau khi hoàn tất giao dịch."/>
+    <TextView
+        android:layout_marginTop="16dp"
+        android:textSize="16sp"
+        android:textColor="@color/mauDo2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Phương thức trả sau: Thanh toán khi nhận hàng"/>
+    <TextView
+        android:textColor="@color/black"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sau khi khách hàng có thể đặt hàng qua ứng dụng. Nhân viên của chúng tôi sẽ gọi điện xác nhận với khách hàng về sản phẩm và phương thức vận chuyển."/>
+    <TextView
+        android:textColor="@color/black"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Quý khách có trách nhiệm thanh toán đầy đủ toàn bộ giá trị đơn hàng cho nhân viên giao nhận ngay sau khi hoàn tất kiểm tra sản phẩm (kiểm tra đúng sản phẩm đã đặt, đầy đủ phụ kiện đi kèm, phiếu bảo hành).."/>
+    <TextView
+        android:layout_marginTop="8dp"
+        android:textSize="16sp"
+        android:textColor="@color/mauDo2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Phương thức trả trước: Thanh toán trước khi nhận hàng"/>
+    <TextView
+        android:textColor="@color/black"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="A. Thanh toán trực tuyến : thanh toán trực tiếp trên ứng dụng FAHASA khi đặt đơn hàng bằng các loại thẻ Visa/Master/thẻ nội địa/ thẻ ghi nợ của tất cả các ngân hàng.."/>
+    <TextView
+        android:textColor="@color/black"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="B. Thanh toán chuyển khoản hoặc bằng máy ATM (qua ngân hàng): đã đặt xong đơn hàng hoặc đã xác nhận với cửa hàng về sản phẩm cần mua."/>
+    <TextView
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@color/mauDo2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="FAHASA Xin chân thành cảm ơn quý khách !"/>
+</LinearLayout>

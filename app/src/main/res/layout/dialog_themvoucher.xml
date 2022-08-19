@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <EditText
+        android:textSize="26sp"
+        android:hint="Mã Voucher"
+        android:id="@+id/txtMaVoucher"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:textSize="14sp"
+        android:layout_below="@+id/txtMaVoucher"
+        android:hint="Tỷ lệ giảm (Nhập dưới 1)"
+        android:id="@+id/txtTyLeGiam"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:gravity="left"
+        android:layout_below="@+id/txtTyLeGiam"
+        android:hint="Nội dung..."
+        android:id="@+id/txtNoiDung"
+        android:layout_width="match_parent"
+        android:layout_height="150dp" />
+
+</RelativeLayout>

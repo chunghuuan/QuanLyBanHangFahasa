@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="admin1.ufm.quanlybanhangfahasa">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.QuanLyBanHangFahasa">
+        <activity android:name="admin1.ufm.quanlybanhangfahasa.Activity_Fahasa.Activity_NhanVien"></activity>
+        <activity android:name="admin1.ufm.quanlybanhangfahasa.Activity_Fahasa.Activity_Admin" />
+        <activity
+            android:name="admin1.ufm.quanlybanhangfahasa.Activity_Fahasa.Activity_ThongKeBanHang"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="admin1.ufm.quanlybanhangfahasa.Activity_Fahasa.Activity_KhachHang">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="admin1.ufm.quanlybanhangfahasa.Activity_Fahasa.Activity_DHKH" />
+        <activity android:name="admin1.ufm.quanlybanhangfahasa.Activity_Fahasa.Activity_LSDonHang" />
+        <activity android:name="admin1.ufm.quanlybanhangfahasa.Activity_Fahasa.Activity_SoHuuVoucher" />
+        <activity android:name="admin1.ufm.quanlybanhangfahasa.Activity_Fahasa.Activity_QuyDinh" />
+        <activity android:name="admin1.ufm.quanlybanhangfahasa.Activity_Fahasa.Activity_ThanhToan" />
+        <activity android:name="admin1.ufm.quanlybanhangfahasa.Activity_Fahasa.Activity_TrangChu3">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="admin1.ufm.quanlybanhangfahasa.Activity_Fahasa.Activity_DonHangDaXL">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="admin1.ufm.quanlybanhangfahasa.Activity_Fahasa.Activity_CTDH">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="admin1.ufm.quanlybanhangfahasa.Activity_Fahasa.Activity_TuyChinhSach">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="admin1.ufm.quanlybanhangfahasa.Activity_Fahasa.Activity_Sach">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="admin1.ufm.quanlybanhangfahasa.Activity_Fahasa.Activiti_ThongTinCaNhan">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="admin1.ufm.quanlybanhangfahasa.Activity_Fahasa.Activity_DangNhap">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="admin1.ufm.quanlybanhangfahasa.Activity_Fahasa.Activity_DangKy"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="admin1.ufm.quanlybanhangfahasa.Activity_Fahasa.Activity_TrangChu">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.actions"
+            android:resource="@xml/dangnhap" />
+
+        <activity android:name="admin1.ufm.quanlybanhangfahasa.Activity_Fahasa.Activity_Voucher" />
+        <activity android:name="admin1.ufm.quanlybanhangfahasa.Activity_Fahasa.Activity_TuyChinhVoucher" />
+    </application>
+
+</manifest>

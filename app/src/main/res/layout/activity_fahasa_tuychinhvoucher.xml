@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mauXam"
+    android:orientation="vertical"
+    tools:context=".ThemViTien">
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:layout_margin="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageButton
+            android:src="@drawable/back"
+            android:backgroundTint="@color/mauXam"
+            android:id="@+id/imgBtnBack"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"/>
+        <TextView
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tùy chỉnh Voucher"
+            android:textColor="@color/black"
+            android:textSize="20sp"/>
+        <ImageButton
+            android:layout_toStartOf="@+id/imgBtnXacNhan"
+            android:id="@+id/imgBtnXoa"
+            android:backgroundTint="@color/mauXam"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/thungrac"/>
+        <ImageButton
+            android:id="@+id/imgBtnXacNhan"
+            android:backgroundTint="@color/mauXam"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/xacnhan"/>
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_margin="16dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <EditText
+            android:paddingLeft="16dp"
+            android:id="@+id/txtMaVoucher"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:hint="Mã Voucher"
+            android:inputType="text"
+            android:textSize="32sp"
+            android:editable="false"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray"/>
+        <TextView
+            android:paddingLeft="16dp"
+            android:layout_width="match_parent"
+            android:background="@color/white"
+            android:layout_height="wrap_content"
+            android:text="Nhập nội dung phía dưới:"/>
+        <EditText
+            android:id="@+id/txtNoiDung"
+            android:paddingLeft="16dp"
+            android:layout_width="match_parent"
+            android:background="@color/white"
+            android:layout_height="45dp"
+            android:hint="Fahasa xin tặng ..."/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray"/>
+        <EditText
+            android:id="@+id/txtTyleGiam"
+            android:inputType="numberDecimal"
+            android:paddingLeft="16dp"
+            android:layout_width="match_parent"
+            android:background="@color/white"
+            android:layout_height="30dp"
+            android:hint="Nhập tỷ lệ giảm ở đây"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray"/>
+    </LinearLayout>
+
+</LinearLayout>
